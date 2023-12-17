@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\field.png" />
+    <None Remove="Images\jersey.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj" />
+    <ProjectReference Include="..\WinForms\WinForms.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\field.png" />
+    <Resource Include="Images\jersey.jpg" />
+  </ItemGroup>
+
+</Project>
